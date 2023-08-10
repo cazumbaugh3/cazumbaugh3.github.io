@@ -1,0 +1,159 @@
+
+body {
+    background-color: #E8F6EF;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 65pt;
+    font-family: 'Rye';
+    color: #4C4C6D;
+}
+
+h2 {
+    font-size: 32.5pt;
+    color: #4C4C6D;
+}
+
+h3 {
+    color: #4C4C6D;
+}
+
+img {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    float: left;
+}
+
+form {
+    width: 75%;
+    margin: auto;
+}
+
+form label, input, textarea {
+    margin: 10px;
+}
+
+.social-media-image {
+    width: 32px;
+    height: 32px;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.language-image {
+    border-radius: 0%;
+    height: 75px;
+    width: 75px;
+}
+
+.project-div {
+    margin-left: 5%;
+}
+
+.project-div div {
+    margin-left: 5%;
+}
+
+.navbar {
+    background-color: #4C4C6D;
+}
+
+.container > .row {
+    margin-bottom: 50px;
+}
+
+.card-container {
+    height: 220px;
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.circle::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0px;
+    height: 142px;
+    left: 50%;
+    top: 100%;
+    border: 1px solid;
+}
+
+.circle-last::before {
+    display: none;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    height: 75%;
+    left: 10%;
+}
+
+.card-body > p {
+    display: inline-block;
+}
+
+.contact-label {
+    font-size: large;
+    font-weight: bold;
+}
+
+.message-text-box {
+    display: block;
+    height: 400px;
+    width: 100%;
+}
+
+.btn-contact {
+    display: block;
+    background-color: #4C4C6D;
+    color: white;
+    margin: auto;
+}
+
+.row-space {
+
+    height: 100px;
+}
+
+@media (max-width: 500px) {
+    .circle::before {
+        display: none;
+    }
+
+    .circle {
+        display: block;
+        margin-bottom: 10px;
+        left: calc(50% - 40px);
+    }
+
+    .card {
+        display: block;
+        height: 50%;
+    }
+
+    .card-container {
+        margin-bottom: 10px;
+        height: 250px;
+    }
+}
