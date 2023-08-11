@@ -43,6 +43,12 @@ textarea {
     height: 32px;
 }
 
+.github-link {
+    margin-left: 3em;
+    margin-right: 3em;
+    color: #E8F6EF;
+}
+
 .languages {
     display: flex;
     justify-content: space-between;
