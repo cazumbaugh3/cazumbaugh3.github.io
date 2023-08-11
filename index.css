@@ -1,13 +1,13 @@
-
 body {
     background-color: #E8F6EF;
     position: relative;
+    font-family: "roc-grotesk", sans-serif;
 }
 
 h1 {
     text-align: center;
     font-size: 65pt;
-    font-family: 'Rye';
+    font-family: "roc-grotesk", sans-serif;
     color: #4C4C6D;
 }
 
@@ -23,7 +23,7 @@ h3 {
 img {
     width: 15%;
     height: 15%;
-    border-radius: 50%;
+    border-radius: 20px;
     float: left;
 }
 
@@ -32,7 +32,9 @@ form {
     margin: auto;
 }
 
-form label, input, textarea {
+form label,
+input,
+textarea {
     margin: 10px;
 }
 
@@ -55,18 +57,22 @@ form label, input, textarea {
 }
 
 .project-div {
-    margin-left: 5%;
+    margin-bottom: 6em;
 }
 
-.project-div div {
-    margin-left: 5%;
+.project-img {
+    margin-right: 20px;
+}
+
+.experience-dates {
+    color: gray;
 }
 
 .navbar {
     background-color: #4C4C6D;
 }
 
-.container > .row {
+.container>.row {
     margin-bottom: 50px;
 }
 
@@ -109,7 +115,7 @@ form label, input, textarea {
     left: 10%;
 }
 
-.card-body > p {
+.card-body>p {
     display: inline-block;
 }
 
@@ -144,15 +150,21 @@ form label, input, textarea {
     .circle {
         display: block;
         margin-bottom: 10px;
-        left: calc(50% - 40px);
+        align-self: center;
+        /*left: calc(50% - 40px);*/
     }
 
     .card {
         display: block;
         height: 50%;
+        align-self: center;
     }
 
     .card-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
         margin-bottom: 10px;
         height: 250px;
     }
