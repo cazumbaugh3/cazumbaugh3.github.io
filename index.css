@@ -51,7 +51,8 @@ textarea {
 
 .languages {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     align-content: center;
     flex-wrap: wrap;
 }
@@ -60,6 +61,14 @@ textarea {
     border-radius: 0%;
     height: 75px;
     width: 75px;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+.language-image-wide {
+    border-radius: 0%;
+    margin-right: 4em;
+    margin-top: 2em;
 }
 
 .project-div {
